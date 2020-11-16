@@ -6,7 +6,7 @@ class C_home extends CI_Controller {
 	public function beranda()
 	{
 		$data = array('title' => 'Visualisasi Data' ,
-					  'isi'	  => 'home/index' );
+					  'isi'	  => 'home/analisis' );
 
 		$this->load->view('home/templates/templates', $data, FALSE);		
 	}
@@ -23,7 +23,7 @@ class C_home extends CI_Controller {
 	{
 		$data = array(
 			'title' => 'Analisis' ,
-			'isi'	=> 'home/analisis' 
+			'isi'	=> 'home/index' 
 		);
 
 		$this->load->view('home/templates/templates', $data, FALSE);
